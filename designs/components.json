@@ -1,0 +1,1477 @@
+{
+  "summary": {
+    "name": "Frame 3",
+    "type": "FRAME",
+    "totalNodes": 30,
+    "width": 1760,
+    "height": 1038,
+    "isComponent": false,
+    "isInstance": false
+  },
+  "tokens": {
+    "colors": [
+      {
+        "value": "#ffffff",
+        "count": 13
+      },
+      {
+        "value": "#000000",
+        "count": 3
+      },
+      {
+        "value": "#8a38f5",
+        "count": 3
+      },
+      {
+        "value": "#757575",
+        "count": 3
+      },
+      {
+        "value": "#e78686",
+        "count": 3
+      },
+      {
+        "value": "#1e1e1e",
+        "count": 1
+      }
+    ],
+    "typography": [
+      {
+        "value": "Kanit Regular / 18px",
+        "count": 6
+      },
+      {
+        "value": "Kanit Medium / 18px",
+        "count": 4
+      },
+      {
+        "value": "Kanit Medium / 14px",
+        "count": 4
+      }
+    ],
+    "spacing": [
+      {
+        "value": "5px",
+        "rem": "0.313rem",
+        "count": 2
+      },
+      {
+        "value": "6px",
+        "rem": "0.375rem",
+        "count": 2
+      },
+      {
+        "value": "10px",
+        "rem": "0.625rem",
+        "count": 14
+      },
+      {
+        "value": "13px",
+        "rem": "0.813rem",
+        "count": 12
+      },
+      {
+        "value": "20px",
+        "rem": "1.25rem",
+        "count": 5
+      },
+      {
+        "value": "25px",
+        "rem": "1.563rem",
+        "count": 12
+      }
+    ],
+    "radii": [
+      {
+        "value": "5px",
+        "rem": "0.313rem",
+        "count": 3
+      },
+      {
+        "value": "6px",
+        "rem": "0.375rem",
+        "count": 6
+      },
+      {
+        "value": "10px",
+        "rem": "0.625rem",
+        "count": 2
+      }
+    ],
+    "shadows": []
+  },
+  "tree": {
+    "name": "Frame 3",
+    "type": "FRAME",
+    "width": {
+      "px": 1760,
+      "rem": 110
+    },
+    "height": {
+      "px": 1038,
+      "rem": 64.875
+    },
+    "horizontalSizing": "FIXED",
+    "verticalSizing": "FIXED",
+    "fills": [
+      {
+        "type": "SOLID",
+        "hex": "#000000",
+        "rgba": "rgb(0,0,0)"
+      }
+    ],
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "clipsContent": true,
+    "children": [
+      {
+        "name": "Button",
+        "type": "COMPONENT_SET",
+        "width": {
+          "px": 156,
+          "rem": 9.75
+        },
+        "height": {
+          "px": 298,
+          "rem": 18.625
+        },
+        "horizontalSizing": "FIXED",
+        "verticalSizing": "FIXED",
+        "borderRadius": {
+          "px": 5,
+          "rem": 0.313
+        },
+        "strokes": [
+          {
+            "type": "SOLID",
+            "hex": "#8a38f5",
+            "rgba": "rgb(138,56,245)"
+          }
+        ],
+        "strokeWeight": {
+          "px": 1,
+          "rem": 0.063
+        },
+        "strokeAlign": "INSIDE",
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "clipsContent": true,
+        "children": [
+          {
+            "name": "style=outline, enabled=false",
+            "type": "COMPONENT",
+            "width": {
+              "px": 116,
+              "rem": 7.25
+            },
+            "height": {
+              "px": 53,
+              "rem": 3.313
+            },
+            "layout": {
+              "direction": "row",
+              "gap": {
+                "px": 10,
+                "rem": 0.625
+              },
+              "padding": {
+                "top": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "right": {
+                  "px": 25,
+                  "rem": 1.563
+                },
+                "bottom": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "left": {
+                  "px": 25,
+                  "rem": 1.563
+                }
+              },
+              "mainAxisAlign": "CENTER",
+              "crossAxisAlign": "CENTER",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "AUTO"
+            },
+            "horizontalSizing": "HUG",
+            "verticalSizing": "HUG",
+            "borderRadius": {
+              "px": 6,
+              "rem": 0.375
+            },
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#757575",
+                "rgba": "rgb(117,117,117)"
+              }
+            ],
+            "strokeWeight": {
+              "px": 1,
+              "rem": 0.063
+            },
+            "strokeAlign": "INSIDE",
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "style=outline, enabled=false",
+              "id": "2001:258",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Avançar",
+                "type": "TEXT",
+                "width": {
+                  "px": 66,
+                  "rem": 4.125
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#757575",
+                    "rgba": "rgb(117,117,117)"
+                  }
+                ],
+                "text": {
+                  "content": "Avançar",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Regular",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 400,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          },
+          {
+            "name": "style=outline, enabled=true",
+            "type": "COMPONENT",
+            "width": {
+              "px": 116,
+              "rem": 7.25
+            },
+            "height": {
+              "px": 53,
+              "rem": 3.313
+            },
+            "layout": {
+              "direction": "row",
+              "gap": {
+                "px": 10,
+                "rem": 0.625
+              },
+              "padding": {
+                "top": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "right": {
+                  "px": 25,
+                  "rem": 1.563
+                },
+                "bottom": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "left": {
+                  "px": 25,
+                  "rem": 1.563
+                }
+              },
+              "mainAxisAlign": "CENTER",
+              "crossAxisAlign": "CENTER",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "AUTO"
+            },
+            "horizontalSizing": "HUG",
+            "verticalSizing": "HUG",
+            "borderRadius": {
+              "px": 6,
+              "rem": 0.375
+            },
+            "strokes": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff",
+                "rgba": "rgb(255,255,255)"
+              }
+            ],
+            "strokeWeight": {
+              "px": 1,
+              "rem": 0.063
+            },
+            "strokeAlign": "INSIDE",
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "style=outline, enabled=true",
+              "id": "2003:72",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Avançar",
+                "type": "TEXT",
+                "width": {
+                  "px": 66,
+                  "rem": 4.125
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "text": {
+                  "content": "Avançar",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Regular",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 400,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          },
+          {
+            "name": "style=fill, enabled=false",
+            "type": "COMPONENT",
+            "width": {
+              "px": 116,
+              "rem": 7.25
+            },
+            "height": {
+              "px": 53,
+              "rem": 3.313
+            },
+            "layout": {
+              "direction": "row",
+              "gap": {
+                "px": 10,
+                "rem": 0.625
+              },
+              "padding": {
+                "top": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "right": {
+                  "px": 25,
+                  "rem": 1.563
+                },
+                "bottom": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "left": {
+                  "px": 25,
+                  "rem": 1.563
+                }
+              },
+              "mainAxisAlign": "CENTER",
+              "crossAxisAlign": "CENTER",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "AUTO"
+            },
+            "horizontalSizing": "HUG",
+            "verticalSizing": "HUG",
+            "borderRadius": {
+              "px": 6,
+              "rem": 0.375
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#757575",
+                "rgba": "rgb(117,117,117)"
+              }
+            ],
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "style=fill, enabled=false",
+              "id": "2001:256",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Avançar",
+                "type": "TEXT",
+                "width": {
+                  "px": 66,
+                  "rem": 4.125
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#000000",
+                    "rgba": "rgb(0,0,0)"
+                  }
+                ],
+                "text": {
+                  "content": "Avançar",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Regular",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 400,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          },
+          {
+            "name": "style=fill, enabled=true",
+            "type": "COMPONENT",
+            "width": {
+              "px": 116,
+              "rem": 7.25
+            },
+            "height": {
+              "px": 53,
+              "rem": 3.313
+            },
+            "layout": {
+              "direction": "row",
+              "gap": {
+                "px": 10,
+                "rem": 0.625
+              },
+              "padding": {
+                "top": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "right": {
+                  "px": 25,
+                  "rem": 1.563
+                },
+                "bottom": {
+                  "px": 13,
+                  "rem": 0.813
+                },
+                "left": {
+                  "px": 25,
+                  "rem": 1.563
+                }
+              },
+              "mainAxisAlign": "CENTER",
+              "crossAxisAlign": "CENTER",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "AUTO"
+            },
+            "horizontalSizing": "HUG",
+            "verticalSizing": "HUG",
+            "borderRadius": {
+              "px": 6,
+              "rem": 0.375
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#ffffff",
+                "rgba": "rgb(255,255,255)"
+              }
+            ],
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "style=fill, enabled=true",
+              "id": "2003:70",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Avançar",
+                "type": "TEXT",
+                "width": {
+                  "px": 66,
+                  "rem": 4.125
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#000000",
+                    "rgba": "rgb(0,0,0)"
+                  }
+                ],
+                "text": {
+                  "content": "Avançar",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Regular",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 400,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Input",
+        "type": "COMPONENT_SET",
+        "width": {
+          "px": 596,
+          "rem": 37.25
+        },
+        "height": {
+          "px": 296,
+          "rem": 18.5
+        },
+        "horizontalSizing": "FIXED",
+        "verticalSizing": "FIXED",
+        "borderRadius": {
+          "px": 5,
+          "rem": 0.313
+        },
+        "strokes": [
+          {
+            "type": "SOLID",
+            "hex": "#8a38f5",
+            "rgba": "rgb(138,56,245)"
+          }
+        ],
+        "strokeWeight": {
+          "px": 1,
+          "rem": 0.063
+        },
+        "strokeAlign": "INSIDE",
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "clipsContent": true,
+        "children": [
+          {
+            "name": "error=false",
+            "type": "COMPONENT",
+            "width": {
+              "px": 556,
+              "rem": 34.75
+            },
+            "height": {
+              "px": 132,
+              "rem": 8.25
+            },
+            "layout": {
+              "direction": "column",
+              "gap": {
+                "px": 5,
+                "rem": 0.313
+              },
+              "padding": {
+                "top": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "right": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "bottom": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "left": {
+                  "px": 10,
+                  "rem": 0.625
+                }
+              },
+              "mainAxisAlign": "MIN",
+              "crossAxisAlign": "MIN",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "FIXED"
+            },
+            "horizontalSizing": "FIXED",
+            "verticalSizing": "HUG",
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "error=false",
+              "id": "2003:80",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Label",
+                "type": "TEXT",
+                "width": {
+                  "px": 45,
+                  "rem": 2.813
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "text": {
+                  "content": "Label",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              {
+                "name": "Rectangle 8",
+                "type": "RECTANGLE",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 54,
+                  "rem": 3.375
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "FIXED",
+                "borderRadius": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              {
+                "name": "Campo obrigatório",
+                "type": "TEXT",
+                "width": {
+                  "px": 120,
+                  "rem": 7.5
+                },
+                "height": {
+                  "px": 21,
+                  "rem": 1.313
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "text": {
+                  "content": "Campo obrigatório",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 14,
+                    "rem": 0.875
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          },
+          {
+            "name": "error=true",
+            "type": "COMPONENT",
+            "width": {
+              "px": 556,
+              "rem": 34.75
+            },
+            "height": {
+              "px": 132,
+              "rem": 8.25
+            },
+            "layout": {
+              "direction": "column",
+              "gap": {
+                "px": 5,
+                "rem": 0.313
+              },
+              "padding": {
+                "top": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "right": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "bottom": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "left": {
+                  "px": 10,
+                  "rem": 0.625
+                }
+              },
+              "mainAxisAlign": "MIN",
+              "crossAxisAlign": "MIN",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "FIXED"
+            },
+            "horizontalSizing": "FIXED",
+            "verticalSizing": "HUG",
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "error=true",
+              "id": "2001:465",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Label",
+                "type": "TEXT",
+                "width": {
+                  "px": 45,
+                  "rem": 2.813
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "text": {
+                  "content": "Label",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              {
+                "name": "Rectangle 8",
+                "type": "RECTANGLE",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 54,
+                  "rem": 3.375
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "FIXED",
+                "borderRadius": {
+                  "px": 10,
+                  "rem": 0.625
+                },
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              {
+                "name": "Campo obrigatório",
+                "type": "TEXT",
+                "width": {
+                  "px": 120,
+                  "rem": 7.5
+                },
+                "height": {
+                  "px": 21,
+                  "rem": 1.313
+                },
+                "horizontalSizing": "HUG",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#e78686",
+                    "rgba": "rgb(231,134,134)"
+                  }
+                ],
+                "text": {
+                  "content": "Campo obrigatório",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 14,
+                    "rem": 0.875
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Component 1",
+        "type": "COMPONENT_SET",
+        "width": {
+          "px": 576,
+          "rem": 36
+        },
+        "height": {
+          "px": 286,
+          "rem": 17.875
+        },
+        "layout": {
+          "direction": "column",
+          "gap": {
+            "px": 20,
+            "rem": 1.25
+          },
+          "padding": {
+            "top": {
+              "px": 20,
+              "rem": 1.25
+            },
+            "right": {
+              "px": 20,
+              "rem": 1.25
+            },
+            "bottom": {
+              "px": 20,
+              "rem": 1.25
+            },
+            "left": {
+              "px": 20,
+              "rem": 1.25
+            }
+          },
+          "mainAxisAlign": "MIN",
+          "crossAxisAlign": "MIN",
+          "mainAxisSizing": "AUTO",
+          "crossAxisSizing": "FIXED"
+        },
+        "horizontalSizing": "FIXED",
+        "verticalSizing": "HUG",
+        "borderRadius": {
+          "px": 5,
+          "rem": 0.313
+        },
+        "strokes": [
+          {
+            "type": "SOLID",
+            "hex": "#8a38f5",
+            "rgba": "rgb(138,56,245)"
+          }
+        ],
+        "strokeWeight": {
+          "px": 1,
+          "rem": 0.063
+        },
+        "strokeAlign": "INSIDE",
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "clipsContent": true,
+        "children": [
+          {
+            "name": "hovered=true, error=true",
+            "type": "COMPONENT",
+            "width": {
+              "px": 536,
+              "rem": 33.5
+            },
+            "height": {
+              "px": 113,
+              "rem": 7.063
+            },
+            "layout": {
+              "direction": "column",
+              "gap": {
+                "px": 6,
+                "rem": 0.375
+              },
+              "padding": {
+                "top": {
+                  "px": 0,
+                  "rem": 0
+                },
+                "right": {
+                  "px": 0,
+                  "rem": 0
+                },
+                "bottom": {
+                  "px": 0,
+                  "rem": 0
+                },
+                "left": {
+                  "px": 0,
+                  "rem": 0
+                }
+              },
+              "mainAxisAlign": "MIN",
+              "crossAxisAlign": "MIN",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "FIXED"
+            },
+            "horizontalSizing": "FILL",
+            "verticalSizing": "HUG",
+            "fills": [
+              {
+                "type": "SOLID",
+                "hex": "#1e1e1e",
+                "rgba": "rgb(30,30,30)"
+              }
+            ],
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "hovered=true, error=true",
+              "id": "2003:234",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Comprovante",
+                "type": "TEXT",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "text": {
+                  "content": "Comprovante",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              {
+                "name": "Button",
+                "type": "FRAME",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 53,
+                  "rem": 3.313
+                },
+                "layout": {
+                  "direction": "row",
+                  "gap": {
+                    "px": 10,
+                    "rem": 0.625
+                  },
+                  "padding": {
+                    "top": {
+                      "px": 13,
+                      "rem": 0.813
+                    },
+                    "right": {
+                      "px": 25,
+                      "rem": 1.563
+                    },
+                    "bottom": {
+                      "px": 13,
+                      "rem": 0.813
+                    },
+                    "left": {
+                      "px": 25,
+                      "rem": 1.563
+                    }
+                  },
+                  "mainAxisAlign": "CENTER",
+                  "crossAxisAlign": "CENTER",
+                  "mainAxisSizing": "FIXED",
+                  "crossAxisSizing": "FIXED"
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "FIXED",
+                "borderRadius": {
+                  "px": 6,
+                  "rem": 0.375
+                },
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "strokeWeight": {
+                  "px": 1,
+                  "rem": 0.063
+                },
+                "strokeAlign": "INSIDE",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "children": [
+                  {
+                    "name": "Solte o arquivo aqui",
+                    "type": "TEXT",
+                    "width": {
+                      "px": 161,
+                      "rem": 10.063
+                    },
+                    "height": {
+                      "px": 27,
+                      "rem": 1.688
+                    },
+                    "horizontalSizing": "HUG",
+                    "verticalSizing": "HUG",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "hex": "#ffffff",
+                        "rgba": "rgb(255,255,255)"
+                      }
+                    ],
+                    "text": {
+                      "content": "Solte o arquivo aqui",
+                      "fontFamily": "Kanit",
+                      "fontStyle": "Regular",
+                      "fontSize": {
+                        "px": 18,
+                        "rem": 1.118
+                      },
+                      "fontWeight": 400,
+                      "lineHeight": "auto",
+                      "letterSpacing": "0%",
+                      "textAlign": "left"
+                    },
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Campo obrigatório",
+                "type": "TEXT",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 21,
+                  "rem": 1.313
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#e78686",
+                    "rgba": "rgb(231,134,134)"
+                  }
+                ],
+                "text": {
+                  "content": "Campo obrigatório",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 14,
+                    "rem": 0.875
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          },
+          {
+            "name": "hovered=false, error=false",
+            "type": "COMPONENT",
+            "width": {
+              "px": 536,
+              "rem": 33.5
+            },
+            "height": {
+              "px": 113,
+              "rem": 7.063
+            },
+            "layout": {
+              "direction": "column",
+              "gap": {
+                "px": 6,
+                "rem": 0.375
+              },
+              "padding": {
+                "top": {
+                  "px": 0,
+                  "rem": 0
+                },
+                "right": {
+                  "px": 0,
+                  "rem": 0
+                },
+                "bottom": {
+                  "px": 0,
+                  "rem": 0
+                },
+                "left": {
+                  "px": 0,
+                  "rem": 0
+                }
+              },
+              "mainAxisAlign": "MIN",
+              "crossAxisAlign": "MIN",
+              "mainAxisSizing": "AUTO",
+              "crossAxisSizing": "FIXED"
+            },
+            "horizontalSizing": "FILL",
+            "verticalSizing": "HUG",
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "component": {
+              "name": "hovered=false, error=false",
+              "id": "2003:249",
+              "isDefinition": true
+            },
+            "children": [
+              {
+                "name": "Comprovante",
+                "type": "TEXT",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 27,
+                  "rem": 1.688
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "text": {
+                  "content": "Comprovante",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 18,
+                    "rem": 1.118
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              },
+              {
+                "name": "Button",
+                "type": "FRAME",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 53,
+                  "rem": 3.313
+                },
+                "layout": {
+                  "direction": "row",
+                  "gap": {
+                    "px": 10,
+                    "rem": 0.625
+                  },
+                  "padding": {
+                    "top": {
+                      "px": 13,
+                      "rem": 0.813
+                    },
+                    "right": {
+                      "px": 25,
+                      "rem": 1.563
+                    },
+                    "bottom": {
+                      "px": 13,
+                      "rem": 0.813
+                    },
+                    "left": {
+                      "px": 25,
+                      "rem": 1.563
+                    }
+                  },
+                  "mainAxisAlign": "CENTER",
+                  "crossAxisAlign": "CENTER",
+                  "mainAxisSizing": "FIXED",
+                  "crossAxisSizing": "FIXED"
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "FIXED",
+                "borderRadius": {
+                  "px": 6,
+                  "rem": 0.375
+                },
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#ffffff",
+                    "rgba": "rgb(255,255,255)"
+                  }
+                ],
+                "strokeWeight": {
+                  "px": 1,
+                  "rem": 0.063
+                },
+                "strokeAlign": "INSIDE",
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "children": [
+                  {
+                    "name": "Clique para adicionar ou solte o arquivo aqui",
+                    "type": "TEXT",
+                    "width": {
+                      "px": 358,
+                      "rem": 22.375
+                    },
+                    "height": {
+                      "px": 27,
+                      "rem": 1.688
+                    },
+                    "horizontalSizing": "HUG",
+                    "verticalSizing": "HUG",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "hex": "#ffffff",
+                        "rgba": "rgb(255,255,255)"
+                      }
+                    ],
+                    "text": {
+                      "content": "Clique para adicionar ou solte o arquivo aqui",
+                      "fontFamily": "Kanit",
+                      "fontStyle": "Regular",
+                      "fontSize": {
+                        "px": 18,
+                        "rem": 1.118
+                      },
+                      "fontWeight": 400,
+                      "lineHeight": "auto",
+                      "letterSpacing": "0%",
+                      "textAlign": "left"
+                    },
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Campo obrigatório",
+                "type": "TEXT",
+                "width": {
+                  "px": 536,
+                  "rem": 33.5
+                },
+                "height": {
+                  "px": 21,
+                  "rem": 1.313
+                },
+                "horizontalSizing": "FILL",
+                "verticalSizing": "HUG",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "hex": "#e78686",
+                    "rgba": "rgb(231,134,134)"
+                  }
+                ],
+                "text": {
+                  "content": "Campo obrigatório",
+                  "fontFamily": "Kanit",
+                  "fontStyle": "Medium",
+                  "fontSize": {
+                    "px": 14,
+                    "rem": 0.875
+                  },
+                  "fontWeight": 500,
+                  "lineHeight": "auto",
+                  "letterSpacing": "0%",
+                  "textAlign": "left"
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
