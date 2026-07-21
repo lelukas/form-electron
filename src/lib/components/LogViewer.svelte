@@ -1,23 +1,23 @@
 <script lang="ts">
-  import type { StatusEntry } from '../types'
+import type { StatusEntry } from "../types"
 
-  let {
-    entries = $bindable([]),
-    logs = $bindable([]),
-    running = $bindable(false),
-  }: {
-    entries: StatusEntry[]
-    logs: string[]
-    running: boolean
-  } = $props()
+let {
+	entries = $bindable([]),
+	logs = $bindable([]),
+	running = $bindable(false),
+}: {
+	entries: StatusEntry[]
+	logs: string[]
+	running: boolean
+} = $props()
 
-  let logEl: HTMLDivElement
+let logEl: HTMLDivElement
 
-  $effect(() => {
-    if (logEl) {
-      logEl.scrollTop = logEl.scrollHeight
-    }
-  })
+$effect(() => {
+	if (logEl) {
+		logEl.scrollTop = logEl.scrollHeight
+	}
+})
 </script>
 
 <div class="log-viewer">

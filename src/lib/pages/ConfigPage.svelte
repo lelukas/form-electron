@@ -1,32 +1,32 @@
 <script lang="ts">
-  import type { Config } from '../types'
+import type { Config } from "../types"
 
-  let {
-    config = $bindable({
-      url: '',
-      nucleo: '',
-      nomeSecretario: '',
-      contato: '',
-      valorReferente: '',
-      municipio: '',
-      mes: '',
-    }),
-  }: { config: Config } = $props()
+let {
+	config = $bindable({
+		url: "",
+		nucleo: "",
+		nomeSecretario: "",
+		contato: "",
+		valorReferente: "",
+		municipio: "",
+		mes: "",
+	}),
+}: { config: Config } = $props()
 
-  function handleOpenForm() {
-    if (config.url) {
-      window.api.openForm(config.url)
-    }
-  }
+function handleOpenForm() {
+	if (config.url) {
+		window.api.openForm(config.url)
+	}
+}
 
-  let domPath = $state('')
-  async function handleCaptureDom() {
-    try {
-      domPath = await window.api.captureFormDom()
-    } catch (e: any) {
-      domPath = `Erro: ${e.message ?? e}`
-    }
-  }
+let domPath = $state("")
+async function handleCaptureDom() {
+	try {
+		domPath = await window.api.captureFormDom()
+	} catch (e: any) {
+		domPath = `Erro: ${e.message ?? e}`
+	}
+}
 </script>
 
 <div class="page">

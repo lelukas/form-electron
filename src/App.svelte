@@ -1,52 +1,49 @@
 <script lang="ts">
-  import type { Config, Filiado } from './lib/types'
-  import ConfigPage from './lib/pages/ConfigPage.svelte'
-  import FiliadosPage from './lib/pages/FiliadosPage.svelte'
-  import RunPage from './lib/pages/RunPage.svelte'
+import ConfigPage from "./lib/pages/ConfigPage.svelte"
+import FiliadosPage from "./lib/pages/FiliadosPage.svelte"
+import RunPage from "./lib/pages/RunPage.svelte"
+import type { Config, Filiado } from "./lib/types"
 
-  let currentTab = $state<'config' | 'filiados' | 'run'>('config')
-  let config = $state<Config>({
-    url: '',
-    nucleo: '',
-    nomeSecretario: '',
-    contato: '',
-    valorReferente: '',
-    municipio: '',
-    mes: '',
-  })
-  let filiados = $state<Filiado[]>([])
-  let loaded = $state(false)
+let currentTab = $state<"config" | "filiados" | "run">("config")
+let config = $state<Config>({
+	url: "",
+	nucleo: "",
+	nomeSecretario: "",
+	contato: "",
+	valorReferente: "",
+	municipio: "",
+	mes: "",
+})
+let filiados = $state<Filiado[]>([])
+let loaded = $state(false)
 
-  $effect(() => {
-    async function load() {
-      const [cfg, fil] = await Promise.all([
-        window.api.getConfig(),
-        window.api.getFiliados(),
-      ])
-      config = cfg
-      filiados = fil
-      loaded = true
-    }
-    load()
-  })
+$effect(() => {
+	async function load() {
+		const [cfg, fil] = await Promise.all([window.api.getConfig(), window.api.getFiliados()])
+		config = cfg
+		filiados = fil
+		loaded = true
+	}
+	load()
+})
 
-  $effect(() => {
-    if (!loaded) return
-    const { url, nucleo, nomeSecretario, contato, valorReferente, municipio, mes } = config
-    window.api.saveConfig({ url, nucleo, nomeSecretario, contato, valorReferente, municipio, mes })
-  })
+$effect(() => {
+	if (!loaded) return
+	const { url, nucleo, nomeSecretario, contato, valorReferente, municipio, mes } = config
+	window.api.saveConfig({ url, nucleo, nomeSecretario, contato, valorReferente, municipio, mes })
+})
 
-  $effect(() => {
-    if (!loaded) return
-    const snapshot = filiados.map((f) => ({ ...f }))
-    window.api.saveFiliados(snapshot)
-  })
+$effect(() => {
+	if (!loaded) return
+	const snapshot = filiados.map((f) => ({ ...f }))
+	window.api.saveFiliados(snapshot)
+})
 
-  const tabs = [
-    { id: 'config' as const, label: 'Configuração' },
-    { id: 'filiados' as const, label: 'Filiados' },
-    { id: 'run' as const, label: 'Execução' },
-  ]
+const tabs = [
+	{ id: "config" as const, label: "Configuração" },
+	{ id: "filiados" as const, label: "Filiados" },
+	{ id: "run" as const, label: "Execução" },
+]
 </script>
 
 <nav>

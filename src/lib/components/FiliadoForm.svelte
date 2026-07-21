@@ -1,43 +1,43 @@
 <script lang="ts">
-  import type { Filiado } from '../types'
+import type { Filiado } from "../types"
 
-  let {
-    filiado: initial,
-    onsave,
-    oncancel,
-  }: {
-    filiado?: Filiado
-    onsave: (f: Filiado) => void
-    oncancel: () => void
-  } = $props()
+let {
+	filiado: initial,
+	onsave,
+	oncancel,
+}: {
+	filiado?: Filiado
+	onsave: (f: Filiado) => void
+	oncancel: () => void
+} = $props()
 
-  let nome = $state(initial?.nome ?? '')
-  let valor = $state(initial?.valor ?? '')
-  let comprovante = $state(initial?.comprovante ?? '')
-  let editingId = $state(initial?.id)
+let nome = $state(initial?.nome ?? "")
+let valor = $state(initial?.valor ?? "")
+let comprovante = $state(initial?.comprovante ?? "")
+let editingId = $state(initial?.id)
 
-  function handleSave() {
-    if (!nome.trim() || !valor.trim()) return
-    onsave({
-      id: editingId ?? crypto.randomUUID(),
-      nome: nome.trim(),
-      valor: valor.trim(),
-      comprovante: comprovante.trim(),
-    })
-  }
+function _handleSave() {
+	if (!nome.trim() || !valor.trim()) return
+	onsave({
+		id: editingId ?? crypto.randomUUID(),
+		nome: nome.trim(),
+		valor: valor.trim(),
+		comprovante: comprovante.trim(),
+	})
+}
 
-  function handleOverlayClick(e: MouseEvent) {
-    if (e.target === e.currentTarget) oncancel()
-  }
+function _handleOverlayClick(e: MouseEvent) {
+	if (e.target === e.currentTarget) oncancel()
+}
 
-  function handleKeydown(e: KeyboardEvent) {
-    if (e.key === 'Escape') oncancel()
-  }
+function _handleKeydown(e: KeyboardEvent) {
+	if (e.key === "Escape") oncancel()
+}
 
-  async function handlePickFile() {
-    const name = await window.api.importComprovante()
-    if (name) comprovante = name
-  }
+async function _handlePickFile() {
+	const name = await window.api.importComprovante()
+	if (name) comprovante = name
+}
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions a11y_click_events_have_key_events -->

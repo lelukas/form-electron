@@ -1,64 +1,61 @@
 <script lang="ts">
-  import type { Config, Filiado, StatusEntry } from '../types'
-  import LogViewer from '../components/LogViewer.svelte'
+import type { Config, Filiado, StatusEntry } from "../types"
 
-  let {
-    config,
-    filiados,
-  }: {
-    config: Config
-    filiados: Filiado[]
-  } = $props()
+let {
+	config,
+	filiados,
+}: {
+	config: Config
+	filiados: Filiado[]
+} = $props()
 
-  let running = $state(false)
-  let entries = $state<StatusEntry[]>([])
-  let logs = $state<string[]>([])
+let running = $state(false)
+let entries = $state<StatusEntry[]>([])
+let logs = $state<string[]>([])
 
-  async function handleStart() {
-    if (running || filiados.length === 0) return
-    running = true
-    entries = filiados.map((f) => ({ nome: f.nome, status: 'pending' }))
-    logs = ['Iniciando automação...']
+async function _handleStart() {
+	if (running || filiados.length === 0) return
+	running = true
+	entries = filiados.map((f) => ({ nome: f.nome, status: "pending" }))
+	logs = ["Iniciando automação..."]
 
-    const unsubscribe = window.api.onFormProgress((update: any) => {
-      if (update.type === 'log' && update.message) {
-        logs = [...logs, update.message]
-      }
-      if (update.type === 'status' && update.entry) {
-        entries = entries.map((e) =>
-          e.nome === update.entry.nome ? update.entry : e,
-        )
-      }
-      if (update.type === 'done' && update.message) {
-        logs = [...logs, update.message]
-      }
-      if (update.type === 'error' && update.message) {
-        logs = [...logs, update.message]
-      }
-    })
+	const unsubscribe = window.api.onFormProgress((update: any) => {
+		if (update.type === "log" && update.message) {
+			logs = [...logs, update.message]
+		}
+		if (update.type === "status" && update.entry) {
+			entries = entries.map((e) => (e.nome === update.entry.nome ? update.entry : e))
+		}
+		if (update.type === "done" && update.message) {
+			logs = [...logs, update.message]
+		}
+		if (update.type === "error" && update.message) {
+			logs = [...logs, update.message]
+		}
+	})
 
-    try {
-      await window.api.startAutomation(
-        { ...config },
-        filiados.map((f) => ({ ...f })),
-      )
-      logs = [...logs, 'Automação concluída com sucesso!']
-    } catch (e: any) {
-      logs = [...logs, `Erro: ${e.message ?? String(e)}`]
-    } finally {
-      running = false
-      unsubscribe()
-    }
-  }
+	try {
+		await window.api.startAutomation(
+			{ ...config },
+			filiados.map((f) => ({ ...f })),
+		)
+		logs = [...logs, "Automação concluída com sucesso!"]
+	} catch (e: any) {
+		logs = [...logs, `Erro: ${e.message ?? String(e)}`]
+	} finally {
+		running = false
+		unsubscribe()
+	}
+}
 
-  function handleCancel() {
-    window.api.cancelAutomation()
-    logs = [...logs, 'Cancelando...']
-  }
+function _handleCancel() {
+	window.api.cancelAutomation()
+	logs = [...logs, "Cancelando..."]
+}
 
-  function handleOpenForm() {
-    if (config.url) window.api.openForm(config.url)
-  }
+function _handleOpenForm() {
+	if (config.url) window.api.openForm(config.url)
+}
 </script>
 
 <div class="page">

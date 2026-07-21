@@ -1,38 +1,36 @@
 <script lang="ts">
-  import type { Filiado } from '../types'
-  import FiliadoForm from '../components/FiliadoForm.svelte'
+import FiliadoForm from "../components/FiliadoForm.svelte"
+import type { Filiado } from "../types"
 
-  let {
-    filiados = $bindable([]),
-  }: { filiados: Filiado[] } = $props()
+let { filiados = $bindable([]) }: { filiados: Filiado[] } = $props()
 
-  let editingFiliado = $state<Filiado | undefined>(undefined)
-  let adding = $state(false)
+let editingFiliado = $state<Filiado | undefined>(undefined)
+let adding = $state(false)
 
-  function handleSave(f: Filiado) {
-    if (editingFiliado) {
-      const idx = filiados.findIndex((item) => item.id === editingFiliado!.id)
-      if (idx >= 0) filiados[idx] = f
-    } else {
-      filiados.push(f)
-    }
-    filiados = filiados
-    editingFiliado = undefined
-    adding = false
-  }
+function handleSave(f: Filiado) {
+	if (editingFiliado) {
+		const idx = filiados.findIndex((item) => item.id === editingFiliado!.id)
+		if (idx >= 0) filiados[idx] = f
+	} else {
+		filiados.push(f)
+	}
+	filiados = filiados
+	editingFiliado = undefined
+	adding = false
+}
 
-  function handleDelete(id: string) {
-    filiados = filiados.filter((f) => f.id !== id)
-  }
+function handleDelete(id: string) {
+	filiados = filiados.filter((f) => f.id !== id)
+}
 
-  function handleEdit(f: Filiado) {
-    editingFiliado = f
-  }
+function handleEdit(f: Filiado) {
+	editingFiliado = f
+}
 
-  function handleCancel() {
-    editingFiliado = undefined
-    adding = false
-  }
+function handleCancel() {
+	editingFiliado = undefined
+	adding = false
+}
 </script>
 
 <div class="page">
